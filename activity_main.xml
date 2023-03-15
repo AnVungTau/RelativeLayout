@@ -5,41 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    >
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/red"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="view 1" />
+        android:background="#DC5357"
+        android:text="Red"
+        android:textSize="30dp"
+        android:textColor="@color/white">
 
+    </TextView>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/text_view1"
-        android:layout_toStartOf="@+id/text_view1"
-        android:text="view 2" />
 
-    <TextView
+        android:textColor="@color/white"
+        android:layout_below="@id/red"
+        android:id="@+id/green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view1"
-        android:layout_toStartOf="@+id/text_view1"
-        android:text="view 3" />
+        android:background="#1DC034"
+        android:text="green"
+        android:textSize="30dp"
+       >
 
+    </TextView>
     <TextView
+        android:textColor="@color/white"
+        android:layout_below="@id/green"
+        android:id="@+id/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/text_view1"
-        android:layout_toEndOf="@+id/text_view1"
-        android:text="view 4" />
+        android:background="#2F82EF"
+        android:text="blue"
+        android:textSize="30dp"
+        >
 
+    </TextView>
     <TextView
+        android:textColor="@color/white"
+        android:id="@+id/Orange"
+        android:layout_below="@id/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view1"
-        android:layout_toEndOf="@+id/text_view1"
-        android:text="view 5" />
+        android:background="#D9A32D"
+        android:text="Orange"
+        android:textSize="30dp"
+        >
+
+    </TextView>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/Gray"
+        android:layout_below="@id/Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#969292"
+        android:text="Gray"
+        android:textSize="30dp"
+        >
+
+    </TextView>
+    <TextView
+        android:textColor="@color/white"
+        android:layout_below="@id/Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E23EBA"
+        android:text="Pink"
+        android:textSize="30dp"
+        >
+    </TextView>
+
+
 
 </RelativeLayout>
